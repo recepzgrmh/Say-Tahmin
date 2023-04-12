@@ -86,16 +86,17 @@ namespace Sayı_Tahmin
                             Console.Clear();
                             Console.WriteLine(tahmin + "'den büyük bir deger");
                         }
-
+                        
                         if (tahmin == deger)
                             bildin = false;
                         deneme++;
                     }
-
                     Console.WriteLine($"Tebrikler cevap = {deger}\n\nDoğru cevabı {deneme} denemede buldunuz");
+                    break;     
+                default:
+                    Console.WriteLine("Yanlış değer girişi");
                     break;
             }
-
             Console.ReadKey();
         }
     }
